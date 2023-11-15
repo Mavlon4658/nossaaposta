@@ -99,6 +99,22 @@
   -webkit-text-fill-color: transparent;
 }
 
+.bg_number {
+  border-radius: 20px;
+  background: var(--1, linear-gradient(90deg, #F46B45 0%, #EEA849 100%));
+  min-width: 56px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .download_link {
   display: flex;
   justify-content: center;
@@ -619,6 +635,284 @@ header .bars.active .burger {
 }
 #bonus .cards .item img {
   margin-bottom: 20px;
+}
+
+#bonus_register {
+  padding: 60px 0;
+}
+#bonus_register .main_description {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+#bonus_register .cards {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 388px;
+}
+#bonus_register .cards .main_description {
+  margin: 0;
+  width: auto;
+  text-align: left;
+}
+#bonus_register .cards img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#bonus_register .cards .item {
+  width: 349px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+#bonus_register .cards .item_1 {
+  height: 38px;
+}
+#bonus_register .cards .item_1 .main_number {
+  line-height: 38px;
+}
+#bonus_register .cards .item_1 .main_description {
+  margin-top: 12px;
+}
+#bonus_register .cards .item_3 {
+  width: 100%;
+}
+#bonus_register .cards .item_3 .main_description {
+  width: 309px;
+}
+
+#events {
+  padding: 60px 0;
+}
+#events .main_description {
+  max-width: 900px;
+  margin: 0 auto 93px;
+}
+#events .cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#events .cards .main_img {
+  position: absolute;
+  left: calc(50% - 133px);
+  bottom: -29px;
+}
+#events .cards .item {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 418px;
+  height: 399px;
+  padding: 20px;
+  text-align: center;
+}
+#events .cards .item img {
+  margin-bottom: 36px;
+}
+#events .cards .item .description {
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+#events .cards .item .description span {
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#events .cards .item_2 {
+  padding: 30px 22px;
+}
+#events .cards .item_2 img {
+  margin-bottom: 36px;
+}
+#events .cards .item_2 .description span {
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#vip {
+  padding: 40px 0;
+}
+#vip .title_coral {
+  margin-bottom: 40px;
+}
+#vip .card {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+#vip .card .img_1 {
+  position: absolute;
+  top: 39px;
+  left: 9px;
+}
+#vip .card .img_2 {
+  position: absolute;
+  top: 0;
+  right: -78px;
+}
+#vip .card .item .description {
+  max-width: 637px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 12px auto;
+}
+#vip .card .item span {
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#sports {
+  padding: 60px 0;
+}
+#sports .main_description {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#review {
+  padding: 60px 0;
+}
+#review .main_description {
+  max-width: 766px;
+  margin: 0 auto 58px;
+}
+#review .top_cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  position: relative;
+  margin-bottom: 314px;
+}
+#review .top_cards .item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 349px;
+}
+#review .top_cards .main_description {
+  max-width: auto;
+  margin: 0;
+  text-align: left;
+}
+#review .top_cards .item_3 {
+  width: 100%;
+}
+#review .top_cards .item_3 .main_description {
+  width: 277px;
+}
+#review .top_cards .main_img {
+  position: absolute;
+  left: 50%;
+  top: -27px;
+  transform: translateX(-50%);
+}
+#review .bottom_cards {
+  display: flex;
+  align-items: flex-start;
+  gap: 39px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+#review .bottom_cards .item {
+  text-align: center;
+}
+#review .bottom_cards .item img {
+  margin-bottom: 20px;
+}
+#review .bottom_cards .item .main_description {
+  margin: 0;
+  width: 100%;
+}
+
+.software {
+  text-align: center;
+  padding: 60px 0;
+}
+.software img {
+  margin: 24px 0;
+}
+.software .main_description {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.deposit {
+  padding: 60px 0;
+}
+.deposit .main_description {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+.deposit .table {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  border: 2px solid #DCDCDC;
+  overflow: hidden;
+}
+.deposit .table .item {
+  width: 33.3333333333%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-right: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+.deposit .table .item_head {
+  background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+  color: #fff;
+}
+.deposit .table .border-r-none {
+  border-right: 0;
+}
+.deposit .table .border-b-none {
+  border-bottom: 0;
+}
+.deposit .download_link {
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 992px) {

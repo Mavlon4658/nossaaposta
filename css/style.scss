@@ -105,6 +105,22 @@
     -webkit-text-fill-color: transparent;
 }
 
+.bg_number {
+    border-radius: 20px;
+    background: var(--1, linear-gradient(90deg, #F46B45 0%, #EEA849 100%));
+    min-width: 56px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .download_link {
     display: flex;
     justify-content: center;
@@ -739,6 +755,335 @@ header {
                 margin-bottom: 20px;
             }
         }
+    }
+}
+
+#bonus_register {
+    padding: 60px 0;
+
+    .main_description {
+        max-width: 900px;
+        margin: 0 auto 40px;
+    }
+
+    .cards {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 48px;
+        margin-bottom: 388px;
+
+        .main_description {
+            margin: 0;
+            width: auto;
+            text-align: left;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .item {
+            width: 349px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .item_1 {
+            height: 38px;
+
+            .main_number {
+                line-height: 38px;
+            }
+
+            .main_description {
+                margin-top: 12px;
+            }
+        }
+
+        .item_3 {
+            width: 100%;
+
+            .main_description {
+                width: 309px;
+            }
+        }
+    }
+}
+
+#events {
+    padding: 60px 0;
+
+    .main_description {
+        max-width: 900px;
+        margin: 0 auto 93px;
+    }
+
+    .cards {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .main_img {
+            position: absolute;
+            left: calc(50% - 133px);
+            bottom: -29px;
+        }
+
+        .item {
+            border-radius: 20px;
+            background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 418px;
+            height: 399px;
+            padding: 20px;
+            text-align: center;
+
+            img {
+                margin-bottom: 36px;
+            }
+            
+            .description {
+                color: #FFF;
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: left;
+
+                span {
+                    color: #FFF;
+                    font-family: "Myriad Pro", sans-serif;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .item_2 {
+            padding: 30px 22px;
+
+            img {
+                margin-bottom: 36px;
+            }
+
+            .description {
+                span {
+                    color: #FFF;
+                    font-family: "Myriad Pro", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+#vip {
+    padding: 40px 0;
+    
+    .title_coral {
+        margin-bottom: 40px;
+    }
+    
+    .card {
+        border-radius: 20px;
+        background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: relative;
+        text-align: center;
+        padding: 20px;
+
+        .img_1 {
+            position: absolute;
+            top: 39px;
+            left: 9px;
+        }
+
+        .img_2 {
+            position: absolute;
+            top: 0;
+            right: -78px;
+        }
+
+        .item {
+            .description {
+                max-width: 637px;
+                color: #FFF;
+                text-align: center;
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 12px auto;
+            }
+
+            span {
+                color: #FFF;
+                font-family: "Myriad Pro", sans-serif;
+                font-size: 55px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+#sports {
+    padding: 60px 0;
+
+    .main_description {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+#review {
+    padding: 60px 0;
+
+    .main_description {
+        max-width: 766px;
+        margin: 0 auto 58px;
+    }
+
+    .top_cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+        position: relative;
+        margin-bottom: 314px;
+
+        .item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            width: 349px;
+        }
+
+        .main_description {
+            max-width: auto;
+            margin: 0;
+            text-align: left;
+        }
+
+        .item_3 {
+            width: 100%;
+
+            .main_description {
+                width: 277px;
+            }
+        }
+
+        .main_img {
+            position: absolute;
+            left: 50%;
+            top: -27px;
+            transform:  translateX(-50%);
+        }
+    }
+
+    .bottom_cards {
+        display: flex;
+        align-items: flex-start;
+        gap: 39px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .item {
+            text-align: center;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            .main_description {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.software {
+    text-align: center;
+    padding: 60px 0;
+
+    img {
+        margin: 24px 0;
+    }
+
+    .main_description {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.deposit {
+    padding: 60px 0;
+
+    .main_description {
+        max-width: 900px;
+        margin: 0 auto 40px;
+    }
+
+    .table {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        border: 2px solid #DCDCDC;
+        overflow: hidden;
+
+        .item {
+            width: calc(100% / 3);
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-right: 1px solid #DCDCDC;
+            border-bottom: 1px solid #DCDCDC;
+        }
+
+        .item_head {
+            background: linear-gradient(90deg, #F46B45 0%, #EEA849 100%);
+            color: #fff;
+        }
+
+        .border-r-none {
+            border-right: 0;
+        }
+
+        .border-b-none {
+            border-bottom: 0;
+        }
+    }
+
+    .download_link {
+        margin-top: 40px;
     }
 }
 
