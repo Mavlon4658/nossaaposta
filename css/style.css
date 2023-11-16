@@ -915,6 +915,204 @@ header .bars.active .burger {
   margin-top: 40px;
 }
 
+#customer {
+  padding: 60px 0;
+}
+#customer .main_description {
+  max-width: 638px;
+  margin: 0 auto;
+}
+#customer .cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 40px;
+  padding-bottom: 62px;
+}
+#customer .cards .main_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  top: -40px;
+}
+#customer .cards .item {
+  max-width: 412px;
+  text-align: center;
+}
+#customer .cards .item .title {
+  color: #000;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+#customer .cards .item .main_description {
+  margin: 20px 0px 0;
+  max-width: 100%;
+}
+#customer .cards .item_2 {
+  margin-bottom: 51px;
+}
+
+#conclusion {
+  padding: 60px 0;
+}
+#conclusion .main_container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+#conclusion .main_container .title_coral {
+  text-align: left;
+}
+#conclusion .main_container .main_description {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#questions {
+  padding: 60px 0;
+}
+#questions .accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 42px;
+}
+#questions .accordions .accordion {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#questions .accordions .accordion .accordion_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#questions .accordions .accordion .accordion_head span {
+  color: #000;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+#questions .accordions .accordion .accordion_head .minus {
+  display: none;
+}
+#questions .accordions .accordion .accordion_head.active .minus {
+  display: block;
+}
+#questions .accordions .accordion .accordion_head.active .plus {
+  display: none;
+}
+#questions .accordions .accordion .accordion_body {
+  color: #000;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 16px 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+footer {
+  background: #000;
+  padding: 50px 0;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 21px;
+}
+footer .top .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .top .logo img {
+  width: 25px;
+}
+footer .top .logo span {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+footer .top .right {
+  display: flex;
+  align-items: flex-end;
+  padding: 3px 0px 12px;
+  gap: 15px;
+}
+footer .top .text {
+  margin-right: 4px;
+}
+footer .top .text .title {
+  color: #FFF;
+  text-align: right;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+footer .top .text .value {
+  color: #FFF;
+  text-align: right;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+footer .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0;
+}
+footer .content .left, footer .content .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .bottom .description {
+  padding: 30px 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .bottom .subtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
 @media only screen and (max-width: 992px) {
   .main_container {
     padding: 0px 16px;
