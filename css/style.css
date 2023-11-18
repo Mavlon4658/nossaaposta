@@ -1170,6 +1170,52 @@ footer .bottom .subtitle {
   line-height: 18px;
 }
 
+.error_page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.error_page .title {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.error_page .title img {
+  width: 40px;
+}
+.error_page .title span {
+  color: #F27420;
+  font-family: "Open Sans", sans-serif;
+  font-size: 29.212px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.error_page .main_img {
+  margin-top: 51px;
+  margin-bottom: 57px;
+}
+.error_page .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--1, linear-gradient(90deg, #F46B45 0%, #EEA849 100%));
+  width: 344px;
+  padding: 16px;
+}
+.error_page .link span {
+  color: #FFF;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @media only screen and (max-width: 1150px) {
   #vip {
     padding: 60px 0;
@@ -1818,6 +1864,37 @@ footer .bottom .subtitle {
     line-height: 150%;
     text-align: left;
   }
+  .error_page {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .error_page .title img {
+    width: 41px;
+  }
+  .error_page .title span {
+    font-size: 29.212px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .error_page .main_img {
+    margin-top: 66px;
+    margin-bottom: 69px;
+    width: 263px;
+  }
+  .error_page .link {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
 @media only screen and (max-width: 768px) {
   footer {
@@ -1893,5 +1970,10 @@ footer .bottom .subtitle {
   }
   #site_mobile .main_img_2 {
     transform: translateX(calc(50vw - 50% + 30px));
+  }
+}
+@media only screen and (max-width: 380px) {
+  .error_page .link {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

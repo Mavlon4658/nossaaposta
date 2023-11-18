@@ -1389,6 +1389,58 @@ footer {
     }
 }
 
+.error_page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+
+        img {
+            width: 40px;
+        }
+
+        span {
+            color: #F27420;
+            font-family: "Open Sans", sans-serif;
+            font-size: 29.212px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    .main_img {
+        margin-top: 51px;
+        margin-bottom: 57px;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: var(--1, linear-gradient(90deg, #F46B45 0%, #EEA849 100%));
+        width: 344px;
+        padding: 16px;
+
+        span {
+            color: #FFF;
+            font-family: "Myriad Pro", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
 @media only screen and (max-width: 1150px) {
     #vip {
         padding: 60px 0;
@@ -2256,6 +2308,44 @@ footer {
             }
         }
     }
+
+    .error_page {
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+            img {
+                width: 41px;
+            }
+
+            span {
+                font-size: 29.212px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        .main_img {
+            margin-top: 66px;
+            margin-bottom: 69px;
+            width: 263px;
+        }
+
+        .link {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -2364,6 +2454,14 @@ footer {
     
         .main_img_2 {
             transform: translateX(calc(50vw - 50% + 30px));
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .error_page {
+        .link {
+            width: 100%;
         }
     }
 }
