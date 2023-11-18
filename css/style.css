@@ -13,6 +13,14 @@
   font-weight: 700;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.d-none {
+  display: none;
+}
+
 .main_container {
   max-width: 1356px;
   padding: 0px 30px;
@@ -562,6 +570,9 @@ header .bars.active .burger {
   margin: 0;
   text-align: left;
 }
+#register .left .cards .main_description .img {
+  display: none;
+}
 #register .left .cards .item {
   width: 349px;
   position: relative;
@@ -791,23 +802,26 @@ header .bars.active .burger {
   font-weight: 700;
   line-height: normal;
 }
+#vip .card .item .mobile {
+  display: none;
+}
 
-#sports {
+#Apostas {
   padding: 60px 0;
 }
-#sports .main_description {
+#Apostas .main_description {
   max-width: 900px;
   margin: 0 auto;
 }
 
-#review {
+#casino {
   padding: 60px 0;
 }
-#review .main_description {
+#casino .main_description {
   max-width: 766px;
   margin: 0 auto 58px;
 }
-#review .top_cards {
+#casino .top_cards {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -816,43 +830,43 @@ header .bars.active .burger {
   position: relative;
   margin-bottom: 314px;
 }
-#review .top_cards .item {
+#casino .top_cards .item {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   width: 349px;
 }
-#review .top_cards .main_description {
+#casino .top_cards .main_description {
   max-width: auto;
   margin: 0;
   text-align: left;
 }
-#review .top_cards .item_3 {
+#casino .top_cards .item_3 {
   width: 100%;
 }
-#review .top_cards .item_3 .main_description {
+#casino .top_cards .item_3 .main_description {
   width: 277px;
 }
-#review .top_cards .main_img {
+#casino .top_cards .main_img {
   position: absolute;
   left: 50%;
   top: -27px;
   transform: translateX(-50%);
 }
-#review .bottom_cards {
+#casino .bottom_cards {
   display: flex;
   align-items: flex-start;
   gap: 39px;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-#review .bottom_cards .item {
+#casino .bottom_cards .item {
   text-align: center;
 }
-#review .bottom_cards .item img {
+#casino .bottom_cards .item img {
   margin-bottom: 20px;
 }
-#review .bottom_cards .item .main_description {
+#casino .bottom_cards .item .main_description {
   margin: 0;
   width: 100%;
 }
@@ -862,7 +876,7 @@ header .bars.active .burger {
   padding: 60px 0;
 }
 .software img {
-  margin: 24px 0;
+  margin: 24px auto 0;
 }
 .software .main_description {
   max-width: 900px;
@@ -995,7 +1009,7 @@ header .bars.active .burger {
   justify-content: space-between;
   width: 100%;
 }
-#questions .accordions .accordion .accordion_head span {
+#questions .accordions .accordion .accordion_head h4 {
   color: #000;
   font-family: "Myriad Pro", sans-serif;
   font-size: 20px;
@@ -1113,9 +1127,94 @@ footer .bottom .subtitle {
   line-height: 18px;
 }
 
+@media only screen and (max-width: 1150px) {
+  #vip {
+    padding: 60px 0;
+  }
+  #vip .title_coral {
+    margin-bottom: 30px;
+  }
+  #vip .card {
+    padding: 20px 12px 0;
+  }
+  #vip .card .img_1 {
+    display: none;
+  }
+  #vip .card .img_2 {
+    display: none;
+  }
+  #vip .card .item {
+    text-align: center;
+  }
+  #vip .card .item .description {
+    max-width: 100%;
+  }
+  #vip .card .item .mobile {
+    display: block;
+    margin: 0 auto;
+    transform: translateX(12px);
+  }
+  #customer .main_description {
+    max-width: 100%;
+  }
+  #customer .cards {
+    flex-direction: column;
+    margin-top: 16px;
+    padding-bottom: 0;
+  }
+  #customer .cards .main_img {
+    position: static;
+    left: auto;
+    margin-left: calc(50vw - 16px);
+    transform: translateX(-50%) scale(0.8);
+    z-index: 1;
+    top: auto;
+    display: block;
+    margin-top: -40px;
+  }
+  #customer .cards .item {
+    max-width: 100%;
+    text-align: center;
+  }
+  #customer .cards .item .title {
+    color: #000;
+    text-align: center;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+  }
+  #customer .cards .item .main_description {
+    margin: 20px 0px 0;
+    max-width: 100%;
+  }
+  #customer .cards .item_2 {
+    margin-bottom: 51px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .main_container {
     padding: 0px 16px;
+  }
+  .title_coral {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .little_title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main_description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
   header {
     padding: 26px 0;
@@ -1246,5 +1345,503 @@ footer .bottom .subtitle {
     flex-direction: column;
     gap: 40px;
     width: 100%;
+  }
+  #android .main_description {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #android .main_img {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  #android .main_img img {
+    width: 100%;
+  }
+  #android .cards {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  #android .cards .card .card_top {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  #android .cards .card_2 .card_top {
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  #android .cards .card_2 .card_top .main_description {
+    margin-top: 16px;
+  }
+  #android .cards .card_2 .img {
+    width: 100%;
+  }
+  #android .cards .card_2 .img img {
+    display: block;
+    position: static;
+    left: auto;
+    width: 343px;
+    margin: 0 auto;
+    top: auto;
+  }
+  #android .cards .card_3 .card_top .main_description {
+    margin: 0;
+  }
+  #android .cards .card_5 .img {
+    width: 100%;
+  }
+  #android .cards .card_5 .img img {
+    display: block;
+    position: static;
+    left: auto;
+    width: 343px;
+    margin: 0 auto;
+    top: auto;
+  }
+  #android .cards .card_7 {
+    margin: 0;
+  }
+  #android .cards .card_7 .main_description {
+    max-width: 313px;
+  }
+  #android .cards .main_description {
+    text-align: left;
+    margin: 0;
+  }
+  #android .download_link {
+    padding-top: 40px;
+  }
+  #apk .main_description {
+    max-width: 100%;
+  }
+  #ios {
+    padding: 60px 0;
+    width: 100%;
+  }
+  #ios .main_description {
+    max-width: 100%;
+  }
+  #ios .cards {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  #ios .cards .card_1 {
+    height: 38px;
+  }
+  #ios .cards .card_1 .main_number {
+    line-height: 38px;
+  }
+  #ios .cards .card_1 .main_description {
+    margin-top: 10px;
+  }
+  #ios .cards .card_2 {
+    margin-top: 0;
+  }
+  #ios .cards .card_2 .card_top {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  #ios .cards .card_2 .card_top .main_description {
+    margin-top: 0;
+  }
+  #ios .cards .card_4 .card_top {
+    height: 40px;
+  }
+  #ios .cards .card_4 .card_top .main_description {
+    margin-top: 5px;
+  }
+  #ios .cards .card_5 {
+    margin-top: 0;
+  }
+  #ios .cards .card_6 {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  #ios .cards img {
+    position: static;
+    left: auto;
+    transform: translateX(0);
+    display: block;
+    margin: 30px auto 0;
+  }
+  #ios .cards .main_description {
+    text-align: left;
+    max-width: 100%;
+  }
+  #iphone .main_container .main_description {
+    max-width: 100%;
+    margin: 24px auto 0;
+  }
+  #android_ios .main_description {
+    max-width: 100%;
+    margin: 0px auto 0;
+  }
+  #android_ios .main_img {
+    display: block;
+    width: auto;
+    margin: 30px auto 0;
+  }
+  #android_ios .top_cards {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #android_ios .top_cards .item {
+    width: 100%;
+  }
+  #android_ios .top_cards .main_description br {
+    display: none;
+  }
+  #android_ios .bottom_cards {
+    flex-direction: column;
+  }
+  #android_ios .bottom_cards .main_description {
+    width: 100%;
+    text-align: left;
+  }
+  #android_ios .bottom_cards .table {
+    min-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #DCDCDC;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #android_ios .bottom_cards .table .item {
+    width: 33.3333333333%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #site_mobile .main_description {
+    max-width: 100%;
+    margin: 0 auto 40px;
+  }
+  #site_mobile .main_img_1 {
+    transform: translateX(80px);
+  }
+  #site_mobile .main_img_2 {
+    transform: translateX(30px);
+  }
+  #support .main_description {
+    max-width: 100%;
+  }
+  #support .cards {
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  #support .cards .item {
+    width: 100%;
+  }
+  #support .cards .item .title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #support .cards .main_description {
+    width: 100%;
+    margin: 0;
+  }
+  #register .main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+  }
+  #register .left {
+    width: 100%;
+  }
+  #register .left .main_description {
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  #register .left .cards {
+    gap: 30px;
+    flex-direction: column;
+  }
+  #register .left .cards .item {
+    width: 100%;
+  }
+  #register .left .cards .item .desctop {
+    display: none;
+  }
+  #register .left .cards .item .main_description .img {
+    position: relative;
+    display: inline;
+    padding: 2px;
+  }
+  #register .left .cards .item .main_description .img img {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+  }
+  #register .left .cards .item_1 {
+    height: 38px;
+    align-items: center;
+  }
+  #register .left .cards .item_1 .main_number {
+    line-height: 38px;
+  }
+  #register .left .cards .item_1 .main_description .img img {
+    left: 28px;
+    top: 2px;
+  }
+  #register .left .cards .item_3 {
+    width: 100%;
+  }
+  #register .left .cards .item_3 .main_description {
+    width: auto;
+  }
+  #register .left .cards .item_3 .main_description .img img {
+    left: -20px;
+    top: 15px;
+  }
+  #register .left .cards .item_4 .main_description .img img {
+    left: 10px;
+    top: 10px;
+  }
+  #register .download_link {
+    width: 100%;
+    margin-top: 40px;
+  }
+  #bonus .main_description {
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  #bonus .main_img {
+    margin: 6px auto 30px;
+  }
+  #bonus .little_title {
+    max-width: 100%;
+  }
+  #bonus .cards {
+    margin: 30px 0;
+    flex-direction: column;
+  }
+  #bonus .cards .item {
+    width: 100%;
+    text-align: center;
+  }
+  #bonus_register .main_description {
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  #bonus_register .cards {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  #bonus_register .cards .main_description {
+    margin: 0;
+    width: auto;
+    text-align: left;
+  }
+  #bonus_register .cards img {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: translateX(0);
+    display: block;
+    margin: 0 auto;
+  }
+  #bonus_register .cards .item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  #bonus_register .cards .item_3 .main_description {
+    width: 100%;
+  }
+  #events .main_description {
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  #events .cards {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  #events .cards .main_img {
+    position: static;
+    left: auto;
+    bottom: auto;
+    margin-top: 10px;
+    margin-left: calc(50vw - 16px);
+    transform: translateX(-25%);
+  }
+  #events .cards .item {
+    width: 100%;
+    height: auto;
+  }
+  #casino .main_description {
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+  #casino .top_cards {
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  #casino .top_cards .item {
+    width: 100%;
+  }
+  #casino .top_cards .main_description {
+    max-width: auto;
+    margin: 0;
+    text-align: left;
+  }
+  #casino .top_cards .item_3 {
+    width: 100%;
+  }
+  #casino .top_cards .item_3 .main_description {
+    width: auto;
+  }
+  #casino .top_cards .main_img {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: translateX(0);
+    margin: 0 auto;
+  }
+  #casino .bottom_cards {
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+  #casino .bottom_cards .item {
+    text-align: center;
+    width: 100%;
+  }
+  #casino .bottom_cards .item .main_description {
+    margin: 0;
+    width: 100%;
+  }
+  .software img {
+    transform: translateX(-15px);
+  }
+  .software .main_description {
+    max-width: 100%;
+  }
+  .deposit .main_description {
+    max-width: 100%;
+  }
+  .deposit .table .item {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    line-height: normal;
+    white-space: collapse balance;
+  }
+  #conclusion .main_container {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  #conclusion .main_container .main_img {
+    width: 313px;
+  }
+  #conclusion .main_container .title_coral {
+    text-align: center;
+  }
+  #conclusion .main_container .main_description {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #questions .accordions .accordion .accordion_head h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 60px 0;
+  }
+  footer .top {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 30px;
+    align-items: center;
+  }
+  footer .top .logo {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .top .right {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .top .text {
+    margin-right: 0;
+    width: 100%;
+  }
+  footer .top .text .title {
+    text-align: center;
+  }
+  footer .top .text .value {
+    text-align: center;
+  }
+  footer .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer .content .left, footer .content .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #android_ios .main_img {
+    transform: translateX(calc(50vw - 47%)) scale(0.8);
+    margin: 0;
+  }
+  #site_mobile .main_description {
+    max-width: 100%;
+    margin: 0 auto 40px;
+  }
+  #site_mobile .main_img_1 {
+    width: 441px;
+  }
+  #site_mobile .main_img_2 {
+    transform: translateX(30px);
+    width: 527px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #android .cards .card .img img {
+    width: 100%;
+  }
+  #ios .main_img {
+    width: 100%;
+  }
+  #site_mobile .main_img_1 {
+    transform: translateX(calc(50vw - 50% + 40px));
+  }
+  #site_mobile .main_img_2 {
+    transform: translateX(calc(50vw - 50% + 30px));
   }
 }/*# sourceMappingURL=style.css.map */
