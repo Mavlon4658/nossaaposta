@@ -239,6 +239,7 @@ header .bars.active .burger {
 }
 #home_card .card img {
   width: 106px;
+  height: 106px;
   margin-bottom: 12px;
 }
 #home_card .card .description {
@@ -262,6 +263,8 @@ header .bars.active .burger {
   top: 78px;
   left: calc(50% - 160px);
   z-index: -1;
+  width: 442px;
+  height: 461.11px;
 }
 
 #android {
@@ -275,6 +278,10 @@ header .bars.active .burger {
 #android .main_img {
   text-align: center;
   margin-bottom: 40px;
+}
+#android .main_img img {
+  width: 322px;
+  height: 480px;
 }
 #android .cards {
   display: grid;
@@ -295,6 +302,10 @@ header .bars.active .burger {
 #android .cards .card_2 .card_top .main_description {
   margin-top: 16px;
 }
+#android .cards .card_2 .img img {
+  width: 381px;
+  height: 79px;
+}
 #android .cards .card_3 .card_top {
   align-items: center;
   display: flex;
@@ -307,6 +318,8 @@ header .bars.active .burger {
 }
 #android .cards .card_5 img {
   position: absolute;
+  width: 404px;
+  height: 477px;
 }
 #android .cards .card_7 {
   margin-top: 117px;
@@ -329,6 +342,8 @@ header .bars.active .burger {
 }
 #apk img {
   margin: 24px 0;
+  width: 112px;
+  height: 113px;
 }
 #apk .main_description {
   max-width: 900px;
@@ -346,6 +361,8 @@ header .bars.active .burger {
   display: block;
   margin: 40px auto 38px;
   transform: translateX(68px);
+  width: 443px;
+  height: 463px;
 }
 #ios .cards {
   display: grid;
@@ -379,14 +396,30 @@ header .bars.active .burger {
 #ios .cards .card_2 .card_top .main_description {
   margin-top: 16px;
 }
+#ios .cards .card_2 img {
+  width: 204px;
+  height: 410px;
+}
+#ios .cards .card_3 img {
+  width: 204px;
+  height: 410px;
+}
 #ios .cards .card_4 .card_top {
   height: 40px;
 }
 #ios .cards .card_4 .card_top .main_description {
   margin-top: 5px;
 }
+#ios .cards .card_4 img {
+  width: 218px;
+  height: 410px;
+}
 #ios .cards .card_5 {
   margin-top: 286px;
+}
+#ios .cards .card_5 img {
+  width: 210px;
+  height: 411px;
 }
 #ios .cards .card_6 {
   margin-top: 458px;
@@ -411,6 +444,8 @@ header .bars.active .burger {
 }
 #iphone .main_container img {
   margin-bottom: 24px;
+  width: 92px;
+  height: 115px;
 }
 #iphone .main_container .main_description {
   max-width: 900px;
@@ -429,6 +464,8 @@ header .bars.active .burger {
   display: block;
   width: auto;
   margin: 40px auto 0;
+  width: 731px;
+  height: 522px;
 }
 #android_ios .top_cards {
   display: flex;
@@ -441,6 +478,8 @@ header .bars.active .burger {
 }
 #android_ios .top_cards .item img {
   margin-bottom: 30px;
+  width: 106px;
+  height: 106px;
 }
 #android_ios .top_cards .main_description {
   width: auto;
@@ -499,6 +538,8 @@ header .bars.active .burger {
   width: auto;
   margin: 0 auto 40px;
   transform: translateX(80px);
+  width: 656px;
+  height: 512px;
 }
 #site_mobile .main_img_2 {
   width: auto;
@@ -506,6 +547,8 @@ header .bars.active .burger {
   margin: 0 auto;
   transform: translateX(30px);
   margin-bottom: 8px;
+  width: 528px;
+  height: 551px;
 }
 
 #support {
@@ -1331,6 +1374,7 @@ footer .bottom .subtitle {
   }
   #home_card .card img {
     width: 80px;
+    height: 80px;
     margin-bottom: 12px;
   }
   #home_card .card .description {
@@ -1357,6 +1401,7 @@ footer .bottom .subtitle {
     margin-bottom: 60px;
   }
   #android .main_img img {
+    height: auto;
     width: 100%;
   }
   #android .cards {
@@ -1383,6 +1428,7 @@ footer .bottom .subtitle {
     position: static;
     left: auto;
     width: 343px;
+    height: auto;
     margin: 0 auto;
     top: auto;
   }
@@ -1399,6 +1445,7 @@ footer .bottom .subtitle {
     width: 343px;
     margin: 0 auto;
     top: auto;
+    height: auto;
   }
   #android .cards .card_7 {
     margin: 0;
@@ -1825,10 +1872,12 @@ footer .bottom .subtitle {
   }
   #site_mobile .main_img_1 {
     width: 441px;
+    height: auto;
   }
   #site_mobile .main_img_2 {
     transform: translateX(30px);
     width: 527px;
+    height: auto;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -1837,6 +1886,7 @@ footer .bottom .subtitle {
   }
   #ios .main_img {
     width: 100%;
+    height: auto;
   }
   #site_mobile .main_img_1 {
     transform: translateX(calc(50vw - 50% + 40px));
