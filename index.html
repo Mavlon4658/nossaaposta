@@ -6,13 +6,25 @@
     <title>Nossa Aposta App</title>
     <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
 
-    <link rel="preload" href="./fonts/MYRIADPRO-BOLD.OTF" as="font" type="font/OTF" crossorigin="">
-    <link rel="preload" href="./fonts/MYRIADPRO-REGULAR.OTF" as="font" type="font/OTF" crossorigin="">
+    <style>
+        @font-face {
+            font-family: 'Myriad Pro';
+            src: url('../fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Myriad Pro';
+            src: url('../fonts/MYRIADPRO-BOLD.OTF') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
     <!-- normalize css file -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- css file -->
-    <link rel="preload" as="style" href="./css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./css/styles.css"></noscript>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="wrapper">
