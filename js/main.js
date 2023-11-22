@@ -26,6 +26,6 @@ let main_block_link = document.querySelector('.main_block_link');
 
 if (main_block_link) {
     main_block_link.onclick = () => {
-        window.location.href='./index.html'
+        window.location.href='./'
     }
 }
